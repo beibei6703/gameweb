@@ -1,0 +1,139 @@
+@charset "utf-8";
+* {
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    font-family: 'Arial, sans-serif';
+}
+
+input,
+button {
+    background: none;
+    outline: none;
+    border: 0;
+}
+
+.guess_bet_info_btn,
+.signin_sure,
+.guessInfo-data-tool-btn {
+    border-radius: 2px;
+    height: 27px;
+    margin-top: 7px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    color: #915a0c;
+    background: url('../images/competeImg/guess_b1.jpg') repeat-x bottom;
+}
+
+.changeTeam-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    z-index: 10;
+}
+
+.changeTeam-main {
+    width: 722px;
+    background: #393939;
+    opacity: 0.95;
+    min-height: 241px;
+    position: fixed;
+    left: 50%;
+    margin-left: -361px;
+    margin-top: -120px;
+    top: 50%;
+    z-index: 11;
+}
+
+.changeTeam-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    background: url("../images/competeImg/pubg_close.png") no-repeat center;
+    cursor: pointer;
+}
+
+
+/* .changeTeam-close:hover {
+    background-image: url("../images/competeImg/inequality_ih.png");
+} */
+
+#changeTeam {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.changeTeam-main-con {
+    padding: 30px 40px 48px;
+}
+
+.changeTeam-main-list li {
+    width: 107px;
+    height: 120px;
+    border: #626262 1px solid;
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+.changeTeam-main-list li .ImgOut {}
+
+.changeTeam-main-list ul {
+    width: 722px;
+}
+
+.changeTeam-main-out {
+    padding: 15px 15px 0;
+}
+
+.changeTeam-main-list li .ImgOut,
+.changeTeam-main-list li .ImgOut span {
+    width: 80px;
+    height: 80px;
+}
+
+.changeTeam-main-list li.active,
+.changeTeam-main-list li:hover {
+    border-color: #ae302b;
+}
+
+.changeTeam-main-list li p {
+    line-height: 22px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.text-over {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.guess_bet_info_btn {
+    border-radius: 2px;
+    height: 27px;
+    margin-top: 7px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    color: #915a0c;
+    background: url('../images/competeImg/guess_b1.jpg') repeat-x bottom;
+}
+
+.guess_bet_info_btn:hover {
+    background-image: url('../images/competeImg/guess_bh1.png');
+}
+
+.changeTeam-main-btn {
+    width: 105px;
+    margin: 10px auto 0;
+}

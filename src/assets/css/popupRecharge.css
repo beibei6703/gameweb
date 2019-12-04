@@ -1,0 +1,314 @@
+@charset "utf-8";
+* {
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    font-family: 'Arial, sans-serif';
+}
+
+input,
+button {
+    background: none;
+    outline: none;
+    border: 0;
+}
+
+div::before,
+ul::before {
+    content: '';
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.rechargepop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    z-index: 8210;
+}
+
+.rechargepop-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.rechargepop-main {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 740px;
+    margin-left: -400px;
+    /* margin-top: -366px; */
+    min-height: 200px;
+    z-index: 10;
+    background: #242628;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.recharget-main-top {
+    position: relative;
+    top: 0;
+    height: 100px;
+    left: 0;
+}
+
+.recharge-main-tl {
+    width: 100px;
+    height: 100px;
+}
+
+.recharge-main-t-level {
+    position: relative;
+    top: 30px;
+    left: 20px;
+    width: 500px;
+    text-align: left;
+}
+
+.recharge-main-t-level>h1 {
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 30px;
+}
+
+.recharge-main-t-level>h1 .recharge-main-t-help {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("../images/mygrand/help.png") 8px center no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.recharge-main-t-help-info {
+    width: 134px;
+    padding: 18px 10px 0;
+    line-height: 20px;
+    height: 46px;
+    background: url("../images/mygrand/deeptip.png") no-repeat;
+    position: absolute;
+    top: 26px;
+    left: -6px;
+    z-index: 8;
+    font-size: 12px;
+    color: #989898;
+}
+
+.recharge-main-t-process {
+    margin-top: 10px;
+    width: 500px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    background: #15161a;
+    border-radius: 3px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.recharge-main-t-process em {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    line-height: 20px;
+}
+
+.recharge-main-t-process span.process {
+    background: linear-gradient(90deg, #007c85, #013b46);
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 3px;
+}
+
+.changeTeam-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    background: url("../images/competeImg/pubg_close.png") no-repeat center;
+    cursor: pointer;
+}
+
+.have {
+    margin-top: 26px;
+    clear: both;
+    height: 46px;
+}
+
+.type {
+    font-size: 16px;
+    color: #dcdcdc;
+    line-height: 24px;
+    /* margin-left: 64px; */
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+.have .num {
+    margin-left: 12px;
+    line-height: 24px;
+}
+
+.have .num span {
+    color: #e1bf75;
+}
+
+.buynum {
+    height: 256px;
+    margin-top: 16px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.tip {
+    position: absolute;
+    bottom: -3px;
+    right: 56%;
+}
+
+.buynumul {
+    width: 610px;
+    min-height: 100px;
+}
+
+.buynumul li {
+    width: 176px;
+    height: 42px;
+    float: left;
+    line-height: 42px;
+    border: 1px solid #535353;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    color: #535353;
+}
+
+.buynumul .other {
+    background: #15161a;
+    border: none;
+    height: 40px;
+    width: 154px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    color: #dcdcdc;
+    padding-left: 20px;
+}
+
+.buynumul .c {
+    position: absolute;
+    right: -50px;
+    top: 0px;
+}
+
+.buynumul li.active {
+    border: 1px solid #fff;
+    color: #fff;
+    background: url("../images/mygrand/select.png") right bottom no-repeat;
+}
+
+.payway {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 68px;
+}
+
+.payment {
+    height: 68px;
+}
+
+.payment .alipay {
+    float: left;
+    width: 176px;
+    height: 60px;
+    border: 1px solid #535353;
+    background: url("../images/mygrand/ali.png") center no-repeat;
+}
+
+.payment .wxpay {
+    float: left;
+    width: 176px;
+    height: 60px;
+    border: 1px solid #535353;
+    line-height: 60px;
+    margin-left: 20px;
+    color: #ffffff;
+    background: url("../images/mygrand/wx.png") center no-repeat;
+}
+
+.payment .alipay.active,
+.payment .wxpay.active {
+    border: 1px solid #fff;
+}
+
+.payment .alipay.active {
+    background: url("../images/mygrand/ali.png") center no-repeat, url("../images/mygrand/select.png") right bottom no-repeat;
+}
+
+.payment .wxpay.active {
+    background: url("../images/mygrand/wx.png") center no-repeat, url("../images/mygrand/select.png") right bottom no-repeat;
+}
+
+.needpay {
+    height: 56px;
+}
+
+.needpay .type {
+    line-height: 56px;
+}
+
+.needpay .pay-money {
+    line-height: 56px;
+}
+
+.needpay .rmb {
+    color: #e1bf75;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.needpay .small {
+    font-size: 14px;
+    color: #535353;
+}
+
+.paybtn {
+    height: 45px;
+    text-align: left;
+    padding-left: 198px;
+    margin-top: 20px;
+}
+
+.paybtn .gopay {
+    display: block;
+    width: 150px;
+    height: 44px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 20px;
+    color: #794e0d;
+    background: url(../../assets/images/Mall-images/left-btn.png)
+}

@@ -1,0 +1,565 @@
+    @charset "utf-8";
+    dl,
+    dt {
+        padding: 0;
+        margin: 0;
+    }
+    
+    div::after,
+    ul::after,
+    li::after,
+    h1::after,
+    p::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        clear: both;
+    }
+    
+    .cl-blue {
+        color: #04ffff !important;
+    }
+    
+    * {
+        -webkit-box-sizing: content-box !important;
+        box-sizing: content-box !important;
+        font-family: 'Arial, sans-serif';
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .text-over {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .compete-mine {
+        background: #242426;
+        padding: 22px 0 0 24px;
+        margin-bottom: 12px;
+    }
+    
+    .rela {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .compete-mine-tp-img {
+        width: 64px;
+        height: 64px;
+        /* border-radius: 50%; */
+        /* overflow: hidden; */
+        margin-right: 24px;
+        position: relative;
+    }
+    
+    .avatar {
+        width: 64px;
+        height: 64px;
+        display: block;
+        border-radius: 50%;
+    }
+    
+    .vip_level {
+        width: 40px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        background: url('../images/competeImg/vip.png') no-repeat;
+        background-size: cover;
+        top: 46px;
+        right: -12px;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 800;
+        line-height: 20px;
+        padding-left: 8px;
+    }
+    
+    .compete-mine-tp-text {
+        color: #B8B8B8;
+        line-height: 15px;
+        text-align: left;
+    }
+    
+    .compete-mine-tp-text h1,
+    .compete-mine-tp-text h2,
+    {
+        font-size: 14px;
+    }
+    
+    .compete-mine-tp-text p {
+        font-size: 12px;
+    }
+    
+    .compete-mine-tp-text h2 {
+        font-weight: normal;
+    }
+    
+    .compete-mine-tp-text h1 {
+        color: #c38d2b;
+        font-weight: bold;
+    }
+    
+    .compete-mine-sign {
+        position: absolute;
+        top: 42px;
+        left: 86px;
+        width: 54px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 4px;
+        background: url("../img/garden/checkin_btn.png") repeat-x;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    .sign-competion {
+        background-image: url('../images/competeImg/guess_sign_bg1.jpg');
+        background-size: cover;
+        cursor: default
+    }
+    
+    .compete-mine-sign-reward {
+        position: absolute;
+        top: 67px;
+        left: -25px;
+        width: 296px;
+        height: 24px;
+        line-height: 24px;
+        text-align: right;
+        font-size: 12px;
+        color: #dcdccd;
+        padding-right: 15px;
+        background: #323236;
+    }
+    
+    .compete-mine-sign-reward::before {
+        content: "";
+        display: block;
+        width: 9px;
+        height: 5px;
+        background: url('../images/competeImg/guess_sign_dn.png') no-repeat center;
+        position: absolute;
+        bottom: 23px;
+        left: 130px;
+    }
+    
+    .special {
+        color: #C38E2A;
+    }
+    
+    .level {
+        color: #FF4C22;
+    }
+    
+    .compete-mine-sign-reward i {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        width: 10px;
+        height: 10px;
+        display: block;
+        background: url('../images/competeImg/guess_sign_close.png') no-repeat center;
+        cursor: pointer;
+    }
+    
+    .compete-mine-tt-info {
+        padding-top: 14px;
+        border-bottom: #313134 1px solid;
+    }
+    
+    .compete-mine-tt-info-same {
+        line-height: 35px;
+        height: 35px;
+        color: #dcdcdc;
+        overflow: hidden;
+    }
+    
+    .compete-mine-tt-info-same>.p-span {
+        text-align: left;
+        display: block;
+        float: left;
+        font-size: 15px;
+    }
+    
+    .compete-mine-tt-info-same>p {
+        float: right;
+        font-size: 13px;
+        /* text-align: right; */
+    }
+    
+    .compete-mine-tt-info-same:first-child>p span {
+        font-size: 15px;
+    }
+    
+    .compete-min-dn {
+        padding-top: 14px;
+        text-align: left;
+    }
+    
+    .compete-min-dn-title {
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+        padding-right: 24px;
+        color: #dcdcdc;
+    }
+    
+    .compete-min-dn-title>span {
+        text-align: right;
+        float: right;
+    }
+    
+    .compete-min-dn-list {
+        margin-top: 5px;
+        /* padding-bottom: 20px; */
+    }
+    
+    .compete-min-dn-list ul {
+        /* max-height: 680px; */
+        /* padding-right: 24px; */
+    }
+    
+    .compete-min-dn-list li {
+        width: 260px;
+        background: #38383c;
+        border: #38383c 1px solid;
+        margin-bottom: 16px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .compete-min-dn-list li:hover {
+        border-color: #494955;
+        box-shadow: 3px 3px 20px #151414;
+    }
+    
+    .compete-min-dn-list-inside {
+        width: 230px;
+        padding: 15px 0;
+        margin: 0 auto;
+    }
+    
+    .compete-min-list-li-t {
+        text-align: center;
+    }
+    
+    .compete-min-list-li-t h1 {
+        font-size: 13px;
+        color: #dcdcdc;
+        line-height: 20px;
+    }
+    
+    .compete-min-list-li-t h1 p {
+        max-width: 160px;
+        display: inline-block;
+    }
+    
+    .compete-min-list-li-t h1 span {
+        display: inline-block;
+        vertical-align: 4px;
+        padding-left: 10px;
+    }
+    
+    .compete-min-list-li-t h2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .compete-min-list-li-t i {
+        display: inline-block;
+        margin-left: 3px;
+        /* background: -webkit-linear-gradient(#dab63b 40%, #cea839); */
+        background: url('../images/competeImg/guess_list_g.png') no-repeat center;
+        /* padding: 0 6px 0 5px; */
+        position: relative;
+        top: 0;
+        left: 0;
+        color: #371726;
+        border-radius: 0 0 10px 0;
+        line-height: 18px;
+        font-size: 12px;
+        height: 18px;
+        width: 20px;
+        vertical-align: -3px;
+    }
+    /* .compete-min-list-li-t i::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 15px;
+    height: 24px;
+    margin-top: -12px;
+    background: url('../images/competeImg/guess_fixed.png') no-repeat center;
+} */
+    
+    .compete-min-dn-list-info {
+        margin-top: 10px;
+    }
+    
+    .compete-min-dn-list-info-same {
+        background: #494951;
+        height: 34px;
+        line-height: 34px;
+        font-size: 13px;
+        padding: 0 10px;
+        clear: both;
+    }
+    
+    .compete-min-dn-list-info-same>span {
+        color: #b8b8b8;
+        font-size: 13px;
+        float: left;
+    }
+    
+    .text-over {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .compete-min-dn-list-info-same p {
+        color: #dcdcdc;
+        float: right;
+    }
+    
+    .compete-min-dn-list-info-same p em {
+        display: inline-block;
+        vertical-align: -12px;
+        max-width: 100px;
+    }
+    
+    .compete-min-dn-list-info .compete-min-dn-list-info-same:nth-child(even) {
+        background: #42424a;
+    }
+    
+    .compete-min-dn-more {
+        font-size: 12px;
+        color: #4e4e57;
+        text-align: right;
+        cursor: pointer;
+        padding-top: 16px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+    }
+    
+    .compete-min-dn-more:hover {
+        color: #fff;
+    }
+    
+    .compete-min-list-guesstime {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 12px;
+        color: #999;
+    }
+    /* .compete-min-top-nologin{padding:} */
+    
+    .compete-min-top {
+        margin-right: 24px;
+    }
+    
+    .compete-mine-tp-nologin-go {
+        width: 180px;
+        margin-bottom: 20px;
+        height: 70px;
+    }
+    
+    .compete-mine-tp-nologin-go>div span {
+        border: #666 1px solid;
+        display: inline-block;
+        border-radius: 2px;
+        color: #666;
+        width: 70px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        float: left;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .compete-mine-tp-nologin-go>div {
+        padding-top: 10px;
+    }
+    
+    .compete-mine-tp-nologin-go>div span:last-child {
+        margin-left: 10px;
+    }
+    
+    .compete-mine-tp-nologin-go>div span:first-child {
+        background: #c48e2a;
+        color: #fff;
+        border-color: #c48e2a;
+    }
+    
+    .compete-mine-tp-nologin-go>p {
+        font-size: 14px;
+        color: #666;
+        line-height: 30px;
+    }
+    
+    .swiper-container {
+        max-height: 680px;
+        overflow: hidden;
+    }
+    
+    .swiper-container>div {
+        max-height: 680px;
+        overflow-y: scroll;
+    }
+    
+    .swiper-container>div::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    .swiper-container>div::-webkit-scrollbar-button {
+        /* display: none; */
+    }
+    
+    .swiper-container>div::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    
+    .swiper-container>div::-webkit-scrollbar-thumb {
+        background-color: #494955;
+        /* border-radius: 2px; */
+    }
+    
+    .compete-mine-hover {
+        position: absolute;
+        padding: 25px;
+        width: 200px;
+        top: 47px;
+        left: -266px;
+        background: #37363b;
+        z-index: 10;
+        border: #434343 1.5px solid;
+    }
+    
+    .top0 {
+        top: 47px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    
+    .top1 {
+        top: 279px;
+    }
+    
+    .top2 {
+        top: auto;
+        bottom: 47px;
+    }
+    
+    .top2::before {
+        top: 70% !important;
+    }
+    
+    .compete-mine-hover::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 12px;
+        /* background: url('../images/competeImg/guess_left_sangle.png') no-repeat center; */
+        background: url('../images/competeImg/guess_sangle_b.png') no-repeat center;
+        position: absolute;
+        /* top: 50%; */
+        /* margin-top: -6px; */
+        top: 110px;
+        right: -8px;
+        transform: rotateY(180deg);
+    }
+    
+    .compete-mine-hover-same {
+        margin-bottom: 20px;
+    }
+    
+    .compete-mine-hover-same .compete-mine-hover-title {
+        border-bottom: #414045 1px solid;
+        line-height: 24px;
+        height: 26px;
+        color: #dcdcdc;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .compete-mine-hover-text {
+        padding: 5px 0;
+    }
+    
+    .compete-mine-hover-text-p {
+        line-height: 24px;
+        color: #b8b8b8;
+        font-size: 14px;
+    }
+    
+    .compete-mine-hover-text-p span {
+        float: right;
+        display: block;
+        color: #dcdcdc;
+    }
+    
+    .compete-mine-hover-cards {
+        background: #303032;
+        padding: 10px 5px 5px 10px;
+    }
+    
+    .compete-mine-hover-cards dt {
+        width: 28px;
+        /* height: 28px; */
+        float: left;
+        margin: 0 5px 5px 0;
+    }
+    
+    .compete-mine-hover-cards dt .ImgOut,
+    .compete-mine-hover-cards dt .ImgOut span {
+        width: 26px;
+        height: 26px;
+        background: #fff;
+    }
+    
+    .compete-mine-hover-cards dt .ImgOut {
+        border: #dcdcdc 1px solid;
+    }
+    
+    .compete-mine-hover-cards dt p {
+        font-size: 10px;
+        height: 16px;
+        line-height: 16px;
+        font-family: Arial, sans-serif;
+        color: #b8b8b8;
+        text-align: center;
+    }
+    
+    .compete-mine-recharge {
+        width: 72px;
+        height: 30px;
+        background: url('../img/home/icon_recharge_normal.png') no-repeat center;
+        position: absolute;
+        top: 15px;
+        right: 0px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 16px;
+        /* margin-top: -15px; */
+        cursor: pointer;
+    }
+    
+    .compete-mine-recharge:hover {
+        background: url('../img/home/icon_recharge_hover.png') no-repeat center;
+    }

@@ -1,0 +1,1674 @@
+@charset "utf-8";
+dl,
+dt {
+    padding: 0;
+    margin: 0;
+}
+
+div::after,
+ul::after,
+li::after {
+    content: '';
+    display: block;
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+* {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+button {
+    background: none;
+    border: 0;
+}
+
+input,
+button {
+    border: 0;
+    outline: none;
+}
+
+#treasure {
+    padding: 40px 0;
+    margin-top: -20px;
+}
+
+.treasure-main {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1254px;
+    padding: 0 27px;
+    height: 890px;
+    background: url('https://imgcdn.api.com/images/treasure/bg_lucky.png') no-repeat center top;
+}
+
+.logo {
+    line-height: 37px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.logo span {
+    margin-left: 20px;
+}
+
+#maincontent {
+    text-align: left;
+    padding: 85px 20px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.maincontent-left {
+    width: 850px;
+    margin-left: 28px;
+    /*  */
+}
+
+.maincontent-right {
+    width: 275px;
+    /*  */
+}
+
+#menu {
+    /* position: absolute; */
+    /* top: 0px; */
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding-left: 20px;
+    height: 59px;
+    width: 1200px;
+}
+
+.menu-left {
+    /* padding: 15px; */
+    height: 59px;
+    width: 605px;
+    padding-left: 30px;
+    /* line-height: 30px; */
+}
+
+.menu-left button {
+    height: 28px;
+    line-height: 28px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.menu-unlogin {
+    /* padding-top: 20px; */
+}
+
+.menu-unlogin button {
+    margin-top: 20px;
+    width: 107px;
+    height: 34px;
+    text-indent: -10px;
+    line-height: 34px;
+    cursor: pointer;
+    background: url('https://imgcdn.api.com/images/treasure/icon_login_bg.png') no-repeat center;
+}
+
+.menu-unlogin span {
+    color: #fff;
+    padding-left: 50px;
+    margin-left: 20px;
+    display: block;
+    height: 68px;
+    margin-top: -10px;
+    padding-top: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background: url('https://imgcdn.api.com/images/treasure/icon_unlogin.png') no-repeat left top;
+}
+
+.menu-unlogin span em {
+    font-size: 18px;
+    color: #feeb08;
+    font-weight: bold;
+}
+
+.menu-login {
+    /* padding-left: 30px; */
+    padding-top: 18px;
+}
+
+.menu-pic,
+.menu-pic img {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.menu-pic {
+    padding-top: 2px;
+}
+
+.menu-text {
+    padding-left: 10px;
+    text-align: left;
+    padding-right: 20px;
+    height: 37px;
+    line-height: 37px;
+    /* border-right: #ccc 1px solid; */
+}
+
+.menu-text h1,
+.menu-text h2 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 37px;
+    color: #fff;
+}
+
+.menu-text h1 {
+    background: url('https://imgcdn.api.com/images/treasure/icon_fgx.png') no-repeat right top;
+    padding-right: 16px;
+}
+
+.menu-text h1 span {
+    height: 37px;
+    width: 37px;
+    margin-left: 30px;
+    display: block;
+    float: right;
+    background: url('https://imgcdn.api.com/images/treasure/layout.png') no-repeat center;
+    cursor: pointer;
+}
+
+.menu-text h2 {
+    padding-left: 33px;
+    font-size: 14px;
+}
+
+.menu-text h2 span {
+    font-size: 18px;
+}
+
+.menu-text-btn {
+    width: 67px;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 24px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4px;
+    background: url('https://imgcdn.api.com/images/treasure/icon_recharge.png') no-repeat center;
+    cursor: pointer;
+}
+
+.menu-nav {
+    /* padding-left: 25px; */
+    padding-top: 20px;
+}
+
+.menu-nav .menu-nav-btn {
+    width: 159px;
+    text-align: center;
+    height: 54px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.menu-nav .menu-nav-btn span {
+    display: block;
+    position: absolute;
+    top: -13px;
+    right: -11px;
+    background: url('https://imgcdn.api.com/images/treasure/hot_red.png') no-repeat center;
+    width: 63px;
+    height: 21px;
+}
+
+.menu-nav .menu-nav-btn:nth-child(1) {
+    background: url('https://imgcdn.api.com/images/treasure/icon_lucky_normal.png') no-repeat left top;
+}
+
+.menu-nav .menu-nav-btn.active:nth-child(1) {
+    background-image: url('https://imgcdn.api.com/images/treasure/icon_lucky.png')
+}
+
+.menu-nav .menu-nav-btn:nth-child(2) {
+    background: url('https://imgcdn.api.com/images/treasure/icon_bag.png') no-repeat left top;
+}
+
+.menu-nav .menu-nav-btn.active:nth-child(2) {
+    background-image: url('https://imgcdn.api.com/images/treasure/icon_bag_hover.png')
+}
+
+.menu-service {
+    padding-top: 30px;
+}
+
+.menu-service a {
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    background: none;
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.menu-service button:nth-child(1) {
+    color: #dcdcdc;
+}
+
+.winner-expend {
+    padding: 5px 20px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.winner-expend p {
+    padding: 3px 0;
+}
+
+.menu-top {}
+
+.menu-energy {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 52px;
+    margin-top: -15px;
+    background: url('https://imgcdn.api.com/images/treasure/energy_bg.png') no-repeat left top;
+}
+
+.menu-down-right {
+    width: 245px;
+    height: 29px;
+    line-height: 29px;
+    padding-top: 10px;
+}
+
+.menu-down-right span {
+    display: block;
+    font-size: 15px;
+}
+
+.menu-down-right button {
+    width: 93px;
+    height: 29px;
+    color: #fff;
+    cursor: pointer;
+    background: url('https://imgcdn.api.com/images/treasure/rule_btn.png') no-repeat center;
+}
+
+.menu-down-right button:hover {
+    background-image: url('https://imgcdn.api.com/images/treasure/rule_btn_hover.png');
+}
+
+.menu-energy .reward-energy {
+    padding: 0 5px;
+    /* width: 490px; */
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.reward-energy-title {
+    color: #fff;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.reward-energy-title span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: -5px;
+    background: url("https://imgcdn.api.com/images/treasure/icon_help.png") center no-repeat;
+}
+
+.reward-energy-btn {
+    position: absolute;
+    top: 50%;
+    height: 23px;
+    line-height: 23px;
+    right: -70px;
+    margin-top: -12px;
+    color: #fff;
+    font-size: 14px;
+    width: 64px;
+    text-align: center;
+    /* padding: 0 15px; */
+    border-radius: 25px;
+    border: #fff 1px solid;
+    cursor: pointer;
+}
+
+.reward-energy-process {
+    margin-top: 9px;
+    width: 300px;
+    height: 6px;
+    border-radius: 6px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: #212b5d;
+}
+
+.reward-energy-process span {
+    display: block;
+    height: 100%;
+    background: url('https://imgcdn.api.com/images/treasure/energy_process.png') no-repeat left;
+    border-radius: 10px;
+}
+
+.reward-energy-infor {
+    text-align: left;
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    width: 288px;
+    height: 170px;
+    z-index: 10;
+    padding: 40px 27px 0;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    background: url('https://imgcdn.api.com/images/treasure/energy_hover_bg.png') no-repeat center top;
+}
+
+.reward-energy-infor p {
+    padding: 2px 0;
+}
+
+.reward-energy-infor p em {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+    float: left;
+}
+
+#rewardlist {
+    padding: 5px 6px 5px 5px;
+    width: 850px;
+    height: 690px;
+    background: url('https://imgcdn.api.com/images/treasure/luckybag_bg.png') no-repeat;
+}
+
+.reward-list-ul li {
+    margin: 0 4px 10px 5px;
+    float: left;
+    width: 158px;
+    height: 126px;
+    /* line-height: 80px; */
+    text-align: center;
+    border: #4747a4 1px solid;
+    color: #fff;
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    /* overflow: hidden; */
+}
+
+.reward-list-ul li.active::before {
+    position: absolute;
+    z-index: 100;
+    width: 158px;
+    height: 126px;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    background: url('https://imgcdn.api.com/images/treasure/animate_bg1.png') no-repeat;
+    background-size: cover !important;
+}
+
+.reward-list-ul li:nth-child(10).active::before,
+.reward-list-ul li:nth-child(11).active::before {
+    width: 239px;
+    background: url('https://imgcdn.api.com/images/treasure/animate_bk2.png') no-repeat;
+}
+
+.reward-list-ul li .ImgOut {
+    width: 158px;
+    height: 124px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+/* .reward-list-ul li.active {
+    border-color: #fa6413;
+} */
+
+.reward-list-ul li img {
+    display: block;
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.reward-list-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+}
+
+.reward-list-text p {
+    line-height: 35px;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+}
+
+.reward-list-text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #463b6a;
+    opacity: 0.6;
+}
+
+.reward-list-ul li:hover .reward-list-text::before,
+.mybag-list li:hover .reward-list-text::before {
+    background: #ed7223;
+}
+
+.reward-list {
+    position: relative;
+    top: 0;
+    height: 690px;
+    left: 0;
+    margin-left: 2px;
+    margin-top: 5px;
+    background: url('https://imgcdn.api.com/images/treasure/lucky_bg.png') no-repeat 78px 50px;
+}
+
+.reward-list-ul li:nth-child(6),
+.reward-list-ul li:nth-child(7),
+.reward-list-ul li:nth-child(8),
+.reward-list-ul li:nth-child(9) {
+    right: 2px;
+}
+
+.reward-list-ul li:nth-child(9),
+.reward-list-ul li:nth-child(10),
+.reward-list-ul li:nth-child(11),
+.reward-list-ul li:nth-child(12) {
+    bottom: 9px;
+}
+
+.reward-list-ul li:nth-child(12),
+.reward-list-ul li:nth-child(13),
+.reward-list-ul li:nth-child(14),
+.reward-list-ul li:nth-child(15) {
+    left: 0;
+}
+
+.reward-list-ul li:nth-child(10),
+.reward-list-ul li:nth-child(10) .ImgOut,
+.reward-list-ul li:nth-child(11) .ImgOut,
+.reward-list-ul li:nth-child(11) {
+    width: 241px !important;
+}
+
+.reward-list-ul li:nth-child(6),
+.reward-list-ul li:nth-child(15) {
+    top: 136px;
+}
+
+.reward-list-ul li:nth-child(7),
+.reward-list-ul li:nth-child(14) {
+    top: 272px;
+}
+
+.reward-list-ul li:nth-child(8),
+.reward-list-ul li:nth-child(13) {
+    top: 409px;
+}
+
+.reward-list-ul li:nth-child(10) {
+    right: 170px;
+}
+
+.reward-list-ul li:nth-child(11) {
+    left: 166px;
+}
+
+.reward-list-center {
+    position: absolute;
+    left: 215px;
+    top: 465px;
+    height: 60px;
+    width: 404px;
+    /* background: #fff; */
+}
+
+.reward-list-cn-btn {
+    background: url('https://imgcdn.api.com/images/treasure/btn_open_lucky.png') no-repeat center;
+    width: 140px;
+    padding: 8px 0;
+    text-align: center;
+    line-height: 24px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a49a6;
+}
+
+.reward-list-cn-btn p {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reward-list-cn-btn span b {
+    color: #914323;
+    padding: 0 2px;
+}
+
+.reward-list-cn-btn p.active {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.reward-list-cn-btn span {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.reward-list-cn-btn.active {
+    padding: 0;
+    line-height: 50px;
+}
+
+.winner {
+    height: 462px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.winner-list {
+    margin: 5px 20px;
+    height: 416px;
+    overflow: hidden;
+}
+
+.winner-list li {
+    font-size: 14px;
+    color: #000;
+    /* height: 30px; */
+    line-height: 22px;
+    line-height: 24px;
+    padding: 5px 0;
+    color: #9599ff;
+}
+
+.winner-list li em i {
+    color: #9599ff;
+}
+
+.text-over {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.winner-list li span,
+.winner-list li em {
+    display: inline-block;
+    vertical-align: -5px;
+    /* max-width: 100px; */
+    height: 22px;
+    font-size: 14px;
+    /* padding: 0 2px; */
+    color: #ffe216;
+}
+
+.winner-mine {
+    margin-top: 2px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #6d6eeb;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.winner-mine:hover {
+    color: #9e9edc;
+}
+
+.right-mine-record {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.winner-wechat {
+    color: #666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 376px;
+    font-size: 12px;
+    color: #fff;
+    height: 284px;
+    background: url('https://imgcdn.api.com/images/treasure/erweima.png') no-repeat center right;
+}
+
+.winner-wechat>div {
+    padding-top: 225px;
+    padding-left: 30px;
+}
+
+.winner-wecha-img {
+    width: 132px;
+    height: 132px;
+    background: url('../images/mygrand/wxgzh.png') no-repeat center bottom;
+    margin: 0 auto;
+}
+
+.winner-wechat p,
+.winner-wechat span {
+    width: 161px;
+    display: block;
+    text-align: center;
+    line-height: 16px;
+}
+
+.winner-wechat p {
+    /* margin-top: 20px; */
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+}
+
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    /* z-index: 8; */
+}
+
+.popup-main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    width: 500px;
+    margin-left: -250px;
+    min-height: 100px;
+    margin-top: -151px;
+}
+
+.popup-bg-recharge {
+    width: 482px;
+    height: 380px;
+    margin: -190px 0 0 -241px;
+    background: url('https://imgcdn.api.com/images/treasure/popup_recharge.png') no-repeat center;
+}
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    cursor: pointer;
+    background: url('https://imgcdn.api.com/images/treasure/close.png') no-repeat center;
+}
+
+.popup-close:hover {
+    background-image: url('https://imgcdn.api.com/images/treasure/close_hover.png');
+}
+
+.popup-title {
+    padding-top: 30px;
+    line-height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.popup-main-type-text {
+    line-height: 24px;
+    font-size: 12px;
+    height: 24px;
+    color: #fff;
+}
+
+.popup-main-down {
+    text-align: left;
+    padding: 5px 20px;
+}
+
+.popup-main-type-list {
+    padding: 5px;
+}
+
+.popup-main-type-list span {
+    display: block;
+    float: left;
+    width: 72px;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 8px;
+    cursor: pointer;
+    border: #5e628d 1px solid;
+}
+
+.popup-main-type-list span.active,
+.popup-main-type-others.active {
+    border-color: #fff;
+    background: #fff;
+    color: #252f77;
+}
+
+.popup-main-type-list span.active {
+    background: #f8f8f8;
+}
+
+.popup-main-type-others {
+    font-size: 12px;
+    color: #fff;
+    height: 28px;
+    line-height: 28px;
+    /* width: 230px; */
+    border: #5e628d 1px solid;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 0 20px;
+    width: 392px;
+}
+
+.popup-main-type-others input {
+    width: 265px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    margin-right: 15px;
+    font-size: 12px;
+    background: none;
+    color: #252f77;
+}
+
+.popup-main-type-others em {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: block;
+}
+
+.popup-main-paytype {
+    padding-top: 20px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.popup-main-type {
+    padding: 10px 0;
+}
+
+.popup-main-paytype-same {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.popup-main-paytype-same.payalipay {
+    width: 70px;
+}
+
+.popup-main-paytype-same>span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    /* background: #dfdfdf; */
+    border: #fff 1px solid;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    margin-right: 10px;
+}
+
+.popup-main-paytype-same>span span {
+    display: none;
+    background: #fff;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -3px 0 0 -3px;
+    border-radius: 100%;
+}
+
+.popup-main-payerweima {
+    width: 140px;
+    height: 140px;
+    margin: 4px auto 0;
+    background: #fff;
+}
+
+.popup-main-payerweima img {
+    width: 140px;
+    height: 140px;
+    display: block;
+}
+
+.popup-main-paytype-same img {
+    cursor: pointer;
+}
+
+
+/* .payalipay {
+    background: url('../images/mygrand/ali.png') no-repeat 30px center;
+}
+
+.paywx {
+    background: url('../images/mygrand/wx.png') no-repeat 30px center;
+} */
+
+.popup-main-paytype-same.active>span span {
+    display: block;
+}
+
+.popup-main-paybtn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px auto 10px;
+    /* background: #20aba4; */
+    text-align: center;
+    color: #333;
+    border-radius: 4px;
+}
+
+
+/* 微信支付二维码 */
+
+.popup-main-wechat {
+    width: 460px;
+    height: 259px;
+    background: url('https://imgcdn.api.com/images/treasure/wx_pay.png') no-repeat center
+}
+
+
+/* 福袋 */
+
+.popup-lucky {
+    /* padding: 40px; */
+    width: 342px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 350px;
+    margin: -175px 0 0 -171px;
+    background: url('https://imgcdn.api.com/images/treasure/lucky_success.png') no-repeat center;
+}
+
+.popup-lucky-main {
+    width: 210px;
+    height: 300px;
+    color: #333;
+    line-height: 300px;
+    text-align: center;
+}
+
+.popup-lucky-open-btn {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    width: 93px;
+    margin-left: -47px;
+    border: #fff 1px solid;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.popup-luckyinfo {
+    width: 600px;
+    height: 400px;
+    margin-left: -300px;
+    margin-top: -200px;
+    background: url('https://imgcdn.api.com/images/treasure/popup_lucky.png') no-repeat center;
+}
+
+.popup-main-lucky-containter {
+    padding: 5px;
+}
+
+.popup-main-lucky-list {
+    width: 465px;
+    margin: 20px auto 0px;
+}
+
+.popup-main-lucky-list ul {
+    width: 485px;
+}
+
+.popup-main-lucky-list li {
+    width: 64px;
+    height: 64px;
+    float: left;
+    margin-right: 16px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    /* background: #fff; */
+}
+
+.popup-main-lucky-list li .ImgOut1,
+.popup-main-lucky-list li .ImgOut1 span {
+    width: 64px;
+    height: 64px;
+}
+
+.popup-main-lucky-list li img {
+    max-width: 100%;
+    display: block;
+}
+
+.popup-main-lucky-list li p {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    /* height: 20px;
+    line-height: 20px; */
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+}
+
+.popup-main-lucky-list li.active {
+    float: none;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+}
+
+.popup-main-lucky-list li.active .ImgOut,
+.popup-main-lucky-list li.active .ImgOut span {
+    width: 128px !important;
+    height: 128px !important;
+    display: block !important;
+}
+
+.popup-main-lucky-list li.active .ImgOut1,
+.popup-main-lucky-list li.active .ImgOut1 span {
+    width: 128px !important;
+    height: 128px !important;
+    display: block !important;
+}
+
+.popup-main-lucky-list li .ImgOut1.animate {
+    color: #2099ff;
+}
+
+.popup-main-lucky-list li .ImgOut1.animate img {
+    width: 64px;
+    height: 64px;
+}
+
+.popup-main-lucky-list li.active .ImgOut1.animate img {
+    width: 128px;
+    height: 128px;
+}
+
+.popup-main-lucky-list li .ImgOut1.animate::before,
+.popup-main-lucky-list li .ImgOut1.animate::after {
+    content: '';
+    z-index: -1;
+    /* margin: -5%; */
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: -5px;
+    left: -5px;
+    box-shadow: inset 0 0 0 2px;
+    animation: clipMe 8s linear infinite;
+    -webkit-animation: clipMe 8s linear infinite;
+    -moz-animation: clipMe 8s linear infinite;
+    -ms-animation: clipMe 8s linear infinite;
+    -o-animation: clipMe 8s linear infinite;
+}
+
+.popup-main-lucky-list li.active .ImgOut1.animate::before,
+.popup-main-lucky-list li.active .ImgOut1.animate::after {
+    width: 138px;
+    height: 138px;
+    content: '';
+    z-index: 10;
+    top: -5px;
+    left: -5px;
+    animation: clipMe 8s linear infinite;
+    -webkit-animation: clipMe1 8s linear infinite;
+    -moz-animation: clipMe1 8s linear infinite;
+    -ms-animation: clipMe1 8s linear infinite;
+    -o-animation: clipMe1 8s linear infinite;
+}
+
+.popup-main-lucky-list li .ImgOut1.animate::before {
+    animation-delay: -4s;
+}
+
+.popup-main-lucky-list li .ImgOut1.animate {
+    color: #2099ff;
+}
+
+.popup-main-lucky-list li .ImgOut1.animate::before,
+.popup-main-lucky-list li .ImgOut1.animate::after {
+    content: '';
+    z-index: -1;
+    /* margin: -5%; */
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: -5px;
+    left: -5px;
+    box-shadow: inset 0 0 0 2px;
+    animation: clipMe 8s linear infinite;
+    -webkit-animation: clipMe 8s linear infinite;
+    -moz-animation: clipMe 8s linear infinite;
+    -ms-animation: clipMe 8s linear infinite;
+    -o-animation: clipMe 8s linear infinite;
+}
+
+.popup-main-lucky-list li .ImgOut1.animate::before {
+    animation-delay: -4s;
+}
+
+@keyframes clipMe1 {
+    0%,
+    100% {
+        clip: rect(0px, 138px, 2px, 0px);
+    }
+    25% {
+        clip: rect(0px, 2px, 138px, 0px);
+    }
+    50% {
+        clip: rect(133px, 138px, 138px, 0px);
+    }
+    75% {
+        clip: rect(0px, 138px, 138px, 133px);
+    }
+}
+
+@keyframes clipMe {
+    0%,
+    100% {
+        clip: rect(0px, 74px, 2px, 0px);
+    }
+    25% {
+        clip: rect(0px, 2px, 74px, 0px);
+    }
+    50% {
+        clip: rect(69px, 74px, 74px, 0px);
+    }
+    75% {
+        clip: rect(0px, 74px, 74px, 69px);
+    }
+}
+
+@-webkit-keyframes clipMe {
+    0%,
+    100% {
+        clip: rect(0px, 74px, 2px, 0px);
+    }
+    25% {
+        clip: rect(0px, 2px, 74px, 0px);
+    }
+    50% {
+        clip: rect(69px, 74px, 74px, 0px);
+    }
+    75% {
+        clip: rect(0px, 74px, 74px, 69px);
+    }
+}
+
+@-moz-keyframes clipMe {
+    0%,
+    100% {
+        clip: rect(0px, 74px, 2px, 0px);
+    }
+    25% {
+        clip: rect(0px, 2px, 74px, 0px);
+    }
+    50% {
+        clip: rect(69px, 74px, 74px, 0px);
+    }
+    75% {
+        clip: rect(0px, 74px, 74px, 69px);
+    }
+}
+
+@-o-keyframes clipMe {
+    0%,
+    100% {
+        clip: rect(0px, 74px, 2px, 0px);
+    }
+    25% {
+        clip: rect(0px, 2px, 74px, 0px);
+    }
+    50% {
+        clip: rect(69px, 74px, 74px, 0px);
+    }
+    75% {
+        clip: rect(0px, 74px, 74px, 69px);
+    }
+}
+
+.popup-mian-lucky-text {
+    margin: 0 auto 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+    width: 465px;
+}
+
+.popup-mian-lucky-text p {
+    padding: 2px 0;
+}
+
+.popup-mian-lucky-text p em {
+    font-size: 18px;
+    margin-right: 5px;
+    float: left;
+}
+
+.popup-mian-lucky-text a {
+    color: #fff;
+    margin-right: 8px;
+}
+
+.winner-tabcon {
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.winner-tabcon span {
+    display: block;
+    width: 116px;
+    height: 32px;
+    background: url('https://imgcdn.api.com/images/treasure/icon_btn_reward.png') no-repeat center;
+}
+
+.right-mine-record {}
+
+
+/* 我的背包 */
+
+#mybag {
+    padding: 0 6px 5px 5px;
+}
+
+.mybag-list li,
+.mybag-list li .ImgOut {
+    width: 158px;
+    height: 126px;
+}
+
+.mybag-list {
+    padding-top: 9px;
+    padding-left: 3px;
+    background: #0f0d44;
+    height: 415px;
+    overflow: hidden;
+}
+
+.mybag-list li {
+    text-align: center;
+    border: #4747a4 1px solid;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 2px 10px 5px;
+    overflow: hidden;
+}
+
+.mybag-down {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* background: #4a48a5; */
+}
+
+.reward-list-text.active p {
+    padding-top: 3px;
+    line-height: 16px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.reward-list-text.active p span {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.reward-list-text.active p span em {
+    color: #eb3c1d;
+    font-weight: bold;
+}
+
+.mybag-list-title {
+    text-align: center;
+    font-size: 12px;
+    color: #cfcaff;
+    line-height: 20px;
+}
+
+.mybag-guess-btn-out {
+    width: 280px;
+    margin: 30px auto 0;
+}
+
+.mybag-guess-btn {
+    width: 115px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.mybag-surprise {
+    position: absolute;
+    top: -25px;
+    left: 30px;
+    width: 178px;
+    height: 29px;
+    line-height: 20px;
+    background: url('https://imgcdn.api.com/images/treasure/icon_suprise.png') no-repeat;
+    font-size: 10px;
+}
+
+.mybag-guess-btn.guess {
+    background: url('https://imgcdn.api.com/images/treasure/icon_mybag1.png') no-repeat;
+    color: #1f1fe8;
+}
+
+.mybag-guess-btn.exchange {
+    background: url('https://imgcdn.api.com/images/treasure/icon_mybag2.png') no-repeat;
+    color: #fff;
+}
+
+.mybag-guess .mybag-guess-tabcon span {
+    display: block;
+    width: 116px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background: url('https://imgcdn.api.com/images/treasure/icon_mybag3.png') no-repeat;
+}
+
+.mybag-guess-list li {
+    background: #2a275e;
+    padding: 0 20px;
+    border: #1b1750 1px solid;
+    margin-bottom: 2px;
+}
+
+.mybag-guess-list-top {
+    border-bottom: #46457a 1px dashed;
+    line-height: 24px;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.mybag-guess-list-top span {
+    display: block;
+    float: right;
+}
+
+.mybag-list-contain {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 12px 0;
+}
+
+.mybag-list-contain-same {
+    height: 48px;
+    line-height: 48px;
+    width: 290px;
+}
+
+.mybag-list-contain-same .ImgOut,
+.mybag-list-contain-same .ImgOut span {
+    width: 48px;
+    height: 48px;
+}
+
+.mybag-list-contain-name {
+    width: 220px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.mybag-list-contain-name.name-left {
+    margin-right: 20px;
+    text-align: right;
+}
+
+.mybag-list-contain-name.name-right {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.mybag-list-contain-vs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 40px;
+    margin: -20px 0 0 -30px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffec1a;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.popup-myrecord {
+    width: 600px !important;
+    height: 460px !important;
+    margin: -230px 0 0 -300px;
+    background: url("https://imgcdn.api.com/images/treasure/popup_mine_record.png") no-repeat;
+    overflow: hidden;
+}
+
+.popup-main-myrecord {
+    margin: 20px auto 0;
+    width: 460px;
+    /* padding-right: 20px; */
+    height: 290px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.popup-main-myrecord li {
+    padding: 15px 20px 15px 0;
+}
+
+.popup-main-myrecord li p {
+    line-height: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+}
+
+.reward-list-cn-special {
+    width: 163px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: -329px;
+    right: -10px;
+    background: url('https://imgcdn.api.com/images/treasure/bg_special.png') no-repeat;
+}
+
+.reward-list-probability {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 106px;
+    height: 18px;
+    background: url('https://imgcdn.api.com/images/treasure/icon_ptobability.png') no-repeat center;
+    line-height: 18px;
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.reward-list-ul li:hover .reward-list-probability {
+    display: block;
+}
+
+.toPay {
+    cursor: pointer;
+}
+
+#iframe-aliplay {}
+
+.popup-main-payerweima {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.popup-main-payerweima #iframe-aliplay {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    top: -65px;
+    left: -97px;
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+}
+
+.popup-main-paybtn {
+    width: 96px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    line-height: 30px;
+    text-align: center;
+    margin: 12px auto;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mybag-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    width: 48px;
+    height: 30px;
+    line-height: 17px;
+    padding-right: 3px;
+    background: url('https://imgcdn.api.com/images/treasure/icon_number.png') no-repeat center;
+    z-index: 11;
+}
+
+.guess-list-pubg .mybag-list-contain-same {
+    width: 265px;
+}
+
+.guess-list-pubg .mybag-list-contain-same .mybag-list-contain-name.name-left {
+    width: 180px;
+}
+
+.noData {
+    font-size: 14px;
+    color: #a7a5e6;
+    text-align: center;
+}
+
+.mybag-list .noData {
+    line-height: 300px;
+}
+
+.mybag-guess-list .noData {
+    line-height: 200px;
+    background: #2a275e;
+    border: #1b1750 1px solid;
+}
+
+.popup-main-myrecord .noData {
+    line-height: 300px;
+}
+
+#content_scroll {
+    max-height: 290px;
+    overflow-y: scroll;
+}
+
+#content_scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+#content_scroll::-webkit-scrollbar-button {
+    /* display: none; */
+}
+
+#content_scroll::-webkit-scrollbar-track {
+    background-color: #0e0f2b;
+}
+
+#content_scroll::-webkit-scrollbar-thumb {
+    background-color: #a7aaf5;
+    /* border-radius: 2px; */
+}
+
+.recharge-tishi {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: left;
+    text-indent: 26px;
+    color: #fff;
+}
+
+.popup-main-lucky-btn-out {
+    margin: 20px auto 0;
+    width: 220px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.popup-main-lucky-btn {
+    cursor: pointer;
+    width: 90px;
+    height: 36px;
+    text-align: center;
+    border-radius: 6px !important;
+    font-size: 14px;
+}
+
+.popup-main-lucky-btn:nth-child(1) {
+    background: #3538c5 !important;
+    box-shadow: 0px 0px 20px #99baf9 inset !important;
+    color: #fff !important;
+    line-height: 36px;
+}
+
+.popup-main-lucky-btn:nth-child(1):hover {
+    background: #4e51de !important;
+    box-shadow: 0px 0px 20px #99baf9 inset !important;
+}
+
+.popup-main-lucky-btn:nth-child(2) {
+    border: #fff 1px solid;
+}
+
+.popup-main-lucky-btn:nth-child(2):hover {
+    background: #4e51de !important;
+    border-color: #3538c5;
+}
+
+.popup-main-lucky-btn a {
+    color: #fff;
+    display: block;
+}

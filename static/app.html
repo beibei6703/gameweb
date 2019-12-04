@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收菜网APP下载页面</title>
+</head>
+
+<body>
+    <div id="txt"></div>
+    <script>
+        //       var iosUrl = 'https://shoucai-avatar.oss-cn-shanghai.aliyuncs.com/app/ios/shoucai1.03.01.ipa'; //AppStore下载地址
+        var iosUrl = 'itms-services://?action=download-manifest&url=https://shoucai-avatar.oss-cn-shanghai.aliyuncs.com/app/ios/Entitlements.plist';
+        var anUrl = 'https://shoucai-avatar.oss-cn-shanghai.aliyuncs.com/app/apk/com.shoucaidianjing.guess_V1.03.54.apk'; //android下载地址
+        var defaultUrl = 'https://www.52shoucai.com'; // pc端主页
+        jump(iosUrl, anUrl, defaultUrl);
+        // 去下载
+        function jump(iosUrl, anUrl, defaultUrl) {
+            var ua = navigator.userAgent,
+                appVer = navigator.appVersion;
+            var isAndroid = ua.indexOf('Android') > -1 || ua.indexOf('Linux') > -1;
+            var isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+            // 是安卓浏览器
+            if (isAndroid) {
+                window.location.href = anUrl; // 跳android端下载地址
+            }
+            // 是iOS浏览器
+            if (isIOS) {
+                window.location.href = iosUrl; // 跳AppStore下载地址
+            }
+            // 是微信内部webView
+            if (isWeixn()) {
+                // window.location.href = iosUrl; // 跳AppStore下载地址
+                var txtNode = document.createTextNode('请点击右上角按钮, 点击使用浏览器打开');
+                document.querySelector('#txt').appendChild(txtNode);
+                alert("请点击右上角按钮, 点击使用浏览器打开");
+            }
+            // 是PC端
+            if (isPC()) {
+                window.location.href = defaultUrl; // 公司主页
+            }
+        }
+        // 是微信浏览器
+        function isWeixn() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function isPC() {
+            var uaInfo = navigator.userAgent;
+            var agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"
+            ];
+            var flag = true;
+            for (var v = 0; v < agents.length; v++) {
+                if (uaInfo.indexOf(agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,732 @@
+@charset "utf-8";
+dl,
+dt {
+    padding: 0;
+    margin: 0;
+}
+
+.compete-up .compete-time {
+    height: 20px;
+}
+
+.compete-time {
+    width: 130px;
+    text-align: right;
+    font-size: 14px;
+    padding-right: 20px;
+    overflow: hidden;
+    /* height: 20px; */
+}
+
+.compete-left {
+    width: 800px;
+}
+
+.compete-right {
+    width: 380px;
+}
+
+.compete-team-sample {
+    width: 365px;
+}
+
+.compete-list-minNav {
+    height: 34px;
+    text-align: center;
+    font-size: 12px;
+    background: #242426 url('../images/competeImg/guess_menu_list_bg.png') bottom repeat-x;
+    border-top: #15161a 2px solid;
+    /* border-bottom: #747474 1px solid; */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.compete-list-minNav ul {
+    float: right;
+}
+
+.compete-list-minNav li {
+    width: 70px;
+    /* border-right: #989898 1px solid; */
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    /* margin: 22px 0; */
+    color: #858587;
+    font-size: 12px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.compete-list-minNav li.active p {
+    color: #fff;
+    /* background: #3b3a3f; */
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.compete-list-minNav li.active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background: url('../images/competeImg/guess_menu_list_hover.png') no-repeat;
+    content: "";
+    display: block;
+    z-index: 1;
+}
+
+.compete-list-minNav li:last-child {
+    border: 0;
+}
+
+.compete-list-down {
+    background: #3b3a3f;
+}
+
+.compete-list-down ul {
+    background: #242426;
+}
+
+.compete-list-content {
+    padding: 0 12px 1px;
+    background: #242426;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-team-list {
+    /*height:0px;overflow:hidden;*/
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up {
+    height: 49px;
+    line-height: 20px;
+    font-size: 15px;
+    /* margin-top: 3px; */
+    line-height: 20px;
+    color: #fff;
+    padding: 13px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: #3a393e url('../images/competeImg/guess_list_top_bg.png') no-repeat left;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up .ImgOut {
+    /* width: 32px; */
+    height: 20px;
+    margin-left: 18px;
+    margin-right: 5px;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up .ImgOut span {
+    width: 32px;
+    height: 20px;
+    background: url('../images/competeImg/guess.png') no-repeat;
+    display: inline-block;
+    vertical-align: -4px;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up .ImgOut span.icon_gamelogo2 {
+    background-position: 0 -135px;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up .ImgOut span.icon_gamelogo1 {
+    background-position: -32px -135px;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up .ImgOut span.icon_gamelogo4 {
+    background-position: -64px -135px;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up .ImgOut span.icon_gamelogo3 {
+    background-position: -96px -135px;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up .ImgOut span.icon_gamelogo5 {
+    background-position: -128px -135px;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up .ImgOut span.icon_gamelogo6 {
+    background-position: -128px -135px;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-up .ImgOut span.icon_gamelogo7 {
+    display: inline-block;
+    width: 32px;
+    height: 22px;
+    background: url("../images/matchcenter/wzry_icon_lh.png") no-repeat;
+}
+
+.compete-list-content .compete-list-down ul>li .compete-team {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #444349;
+    height: 94px;
+    display: block;
+    /*-webkit-transition: all 0.1s;*/
+}
+
+.compete-list-content .compete-list-down ul>li .compete-team>.ImgOut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+
+/*.compete-list-content .compete-list-down ul>li .compete-team>.ImgOut p{position:absolute;top:0; left:0;width:100%; height:100%;background:#101010;opacity:0.5; z-index:2;}*/
+
+
+/*.compete-list-content .compete-list-down ul>li:hover .compete-team>.ImgOut p{background:rgba(41,43,47,1);}*/
+
+.compete-list-content .compete-list-down ul>li .compete-team>.ImgOut img {
+    height: 100% !important;
+    /*display:block;float:left;*/
+}
+
+.compete-list-content .compete-list-down ul>li .compete-team>.ImgOut,
+.compete-list-content .compete-list-down ul>li .compete-team>.ImgOut span {
+    width: 190px;
+    height: 94px;
+}
+
+.compete-team-bg {
+    width: 190px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 94px;
+    background: -webkit-linear-gradient(right, rgba(68, 67, 73, 1), rgba(68, 67, 73, 0.5) 100%)
+}
+
+.compete-team-text {
+    width: 800px;
+    height: 94px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.compete-team-list li.compete-team-list-title,
+.compete-team-list li.compete-team-list-main-name,
+.compete-team-list li.compete-team-list-main-vs {
+    color: #9a9a98;
+}
+
+.compete-team-text .compete-team-lname {
+    width: 290px;
+    text-align: center;
+    padding: 24px 5px 0;
+}
+
+.compete-team-text .compete-team-lname h1 {
+    font-size: 14px;
+    color: #fff;
+    font-family: Arial;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.compete-team-text .compete-team-lname span {
+    display: block;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #fff;
+}
+
+.compete-team-logo {
+    width: 70px;
+    height: 94px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.compete-team-logo .ImgOut {
+    width: 63px;
+    height: 57px;
+    margin: 20px auto 0;
+}
+
+.compete-team-logo .ImgOut span {
+    width: 63px;
+    height: 57px;
+}
+
+.compete-team-win {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 24px;
+    height: 22px;
+    background: url('../images/competeImg/guess.png') no-repeat;
+    background-position: -45px 0;
+}
+
+.compete-team-ctext {
+    width: 70px;
+    height: 94px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.compete-team-ctext span {
+    background: url('../images/competeImg/guess_list_vs.png') no-repeat;
+    /* background-position: 0 -115px; */
+    display: block;
+    margin: 33px auto;
+    width: 48px;
+    height: 28px;
+}
+
+.compete-team-ctext em {
+    position: absolute;
+    top: 0;
+    height: 94px;
+    line-height: 94px;
+    display: block;
+}
+
+.compete-team-ctext em:first-child {
+    left: 0;
+}
+
+.compete-team-ctext em:nth-child(3) {
+    right: 0;
+}
+
+.compete-team-ctext i {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.compete-team-list {
+    background: #15161a;
+}
+
+#competeList_down>li .compete-team-list {
+    overflow: hidden;
+}
+
+#competeList_down>li {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+
+/* pubg css */
+
+.compete-pubg {
+    width: 830px;
+    text-align: center;
+    float: right;
+    padding-right: 60px;
+}
+
+.compete-pubg .compete-team-sample {
+    width: 256px;
+}
+
+.compete-pubg .compete-team-logo {
+    margin: 0 auto;
+}
+
+.compete-pubg .compete-team-logo,
+.compete-pubg .compete-team-logo .ImgOut,
+.compete-pubg .compete-team-logo .ImgOut span {
+    width: 72px;
+    height: 72px;
+}
+
+.compete-pubg .compete-team-logo .ImgOut {
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.compete-pubg .compete-team-logo .compete-team-win {
+    top: -10px;
+    left: -10px;
+    transform: scale(0.6)
+}
+
+.compete-pubg .compete-team-lname {
+    /* padding-top: 0; */
+    padding-right: 15px;
+    width: auto;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.compete-pubg .compete-team-lodd {
+    line-height: 15px;
+    font-weight: bold;
+}
+
+.compete-pubg-team {
+    background: #48484f;
+    /* background: #0a0b0d; */
+    padding: 0 20px;
+    /* height: 0;
+    overflow: hidden; */
+}
+
+.compete-pubg-team dt {
+    float: left;
+    line-height: 40px;
+    height: 40px;
+    text-align: right;
+    font-size: 14px;
+    width: 20%;
+    /* padding: 0 5px; */
+}
+
+.compete-team-list li:hover .compete-pubg-team {
+    background: #48484f;
+}
+
+.compete-team-list li:hover .compete-pubg-team,
+.compete-team-list li.active .compete-pubg-team {
+    -webkit-transition: max-height 0.5s ease-in 0.2s;
+    transition: max-height 0.5s ease-in 0.2s;
+    max-height: 1000px;
+}
+
+.compete-pubg-team dt:hover {}
+
+.compete-pubg-team dt .compete-pubg-team-name {
+    display: inline-block;
+    max-width: 84px;
+    line-height: 40px;
+}
+
+.compete-pubg-team dt .compete-pubg-team-odd {
+    vertical-align: 14px;
+}
+
+.compete-pubg-team dt .compete-team-list-main-hg {
+    display: inline-block;
+}
+
+.text-over {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/* pubg css */
+
+.collapse-enter-active {
+    -webkit-transition: max-height 0.5s linear 0.1s;
+    max-height: 1000px;
+}
+
+.collapse-leave {
+    -webkit-transition: max-height 0.5s linear 0.1s;
+    max-height: 1000px;
+}
+
+.collapse-enter {
+    -webkit-transition: max-height 0.5s linear 0.1s;
+    max-height: 0;
+}
+
+.collapse-leave-active {
+    -webkit-transition: max-height 0.5s linear 0.1s;
+    max-height: 0;
+}
+
+.competeList_down ul>li {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.compete-pubg-team-hidden {
+    -webkit-transition: max-height 0.4s linear 0s;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.competeList_down ul>li:hover .compete-team {
+    /* background: #292b2f; */
+}
+
+.competeList_down ul>li:hover .compete-team .compete-team-bg {
+    /* background: -webkit-linear-gradient(right, rgba(41, 43, 47, 1), rgba(0, 0, 0, 0) 70%) */
+}
+
+.compete-team-list {
+    background: #37363b;
+}
+
+.compete-team-list li {
+    clear: both;
+    /* padding-right: 20px; */
+    /* border-top: #15161a 1px solid; */
+    /* border-bottom: #15161a 1px solid; */
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #3c3b41;
+}
+
+.compete-team-list li:hover .compete-pubg-team {}
+
+.compete-team-list li .compete-team-list-out {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.compete-team-list li .compete-team-list-title {
+    padding-left: 20px;    white-space: nowrap;
+    max-width: 170px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.compete-team-list li .compete-team-list-out.active .compete-team-list-title,
+.compete-team-list li .compete-team-list-out.active .compete-team-list-main-name,
+.compete-team-list li .compete-team-list-out.active .compete-team-list-main-vs {
+    font-weight: bold;
+    color: #fff;
+}
+
+.compete-team-list li .compete-team-list-main {
+    width: 430px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -205px;
+}
+
+.compete-team-list li .compete-team-list-main-sample {
+    width: 180px;
+}
+
+.compete-team-list li .compete-team-list-main-name {
+    max-width: 70px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+}
+
+.compete-team-list li .compete-team-list-main-pl {
+    max-width: 100px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #fff;
+}
+
+.compete-team-list li .compete-team-list-main-hg {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background: url('../images/competeImg/guess_win.png') no-repeat center;
+    /* background-position: -68px -6px; */
+    margin-left: 2px;
+    margin-top: 4px;
+    /* vertical-align: 14px; */
+}
+
+.compete-pubg-team dt .compete-team-list-main-hg {
+    margin-top: 0px;
+    vertical-align: 5px;
+}
+
+.compete-team-list li .compete-team-list-main-vs {
+    width: 70px;
+    text-align: center;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.compete-team-list li:nth-child(even) {
+    background: #37363b;
+    /* border-top: #0a0b0d 1px solid; */
+    /* border-bottom: #0a0b0d 1px solid; */
+}
+
+.compete-team-list li:nth-child(even) .compete-team-list-title,
+.compete-team-list li:nth-child(even) .compete-team-list-main-name,
+.compete-team-list li:nth-child(even) .compete-team-list-main-vs {
+    color: #b8b8b8;
+}
+
+.compete-team-list li:hover {
+    background: #58575f;
+    /* border-top: #3c3f45 1px solid; */
+    /* border-bottom: #15161a 1px solid; */
+}
+
+.compete-team-list-title i {
+    display: inline-block;
+    margin-left: 3px;
+    /* background: -webkit-linear-gradient(#dab63b 40%, #cea839); */
+    background: url('../images/competeImg/guess_list_g.png') no-repeat center;
+    /* padding: 0 6px 0 5px; */
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #371726;
+    /* border-radius: 0 0 10px 0; */
+    line-height: 18px;
+    font-size: 12px;
+    height: 18px;
+    width: 20px;
+    vertical-align: -3px;
+    /* margin-top: 2px; */
+}
+
+.compete-team-list-title i .compete-team-list li .compete-time {
+    color: #dcdcdc;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.compete-team-list li:hover .compete-team-list-title,
+.compete-team-list li:hover .compete-team-list-main-sample,
+.compete-team-list li:hover .compete-team-list-main-name {
+    color: #fff !important;
+}
+
+.compete-team-list li .compete-time i {
+    display: block;
+    width: 14px;
+    height: 40px;
+    margin-left: 5px;
+    float: right;
+    background: url('../images/competeImg/guess_list_dn.png') no-repeat center;
+    -webkit-transition: all 0.5s;
+}
+
+.compete-team-list li:hover .compete-time i,
+.compete-team-list li .compete-time i.active {
+    background-image: url('../images/competeImg/guess_list_up.png');
+}
+
+.cl-yellow1 {
+    color: #d9a35a;
+}
+
+.cl-qs {
+    color: #019496;
+}
+
+.cl-yellow {
+    color: #e1bf75 !important;
+}
+
+.cl-graw {
+    color: #989898 !important;
+}
+
+.cl-red {
+    color: #ed4b4b !important;
+}
+
+.cl-green {
+    color: #27b79e !important;
+}
+
+.cl-blue {
+    color: #04ffff !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.guessList-data {
+    line-height: 430px;
+    color: #989898;
+    font-size: 14px;
+    text-align: center;
+}
+
+.show-list-compete {
+    position: absolute;
+    height: 94px;
+    /* line-height: 60px; */
+    -webkit-transition: all 0.5s;
+    background: url('../images/competeImg/guess_down.png') no-repeat center right;
+    width: 832px;
+    top: 45px;
+    left: 0;
+    z-index: 10;
+}
+
+.show-list-compete.active {
+    background-image: url('../images/competeImg/guess_up.png');
+}
+
+.guessList-data-nomore {
+    width: 390px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px auto 0;
+}
+
+.guessList-data-nomore::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #4f4f55;
+    top: 7px;
+}
+
+.guessList-data-nomore span {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0 15px;
+    background: #242426;
+    color: #4f4f55;
+}
